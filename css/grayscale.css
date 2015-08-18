@@ -1,8 +1,8 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #696969;
+    font-family: Lora, "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #404040;
 }
 
 html {
@@ -38,14 +38,14 @@ p {
 
 @media(min-width:767px) {
     p {
-        margin: 0 0 20px;
-        font-size: 20px;
+        margin: 20 20 20 20 px;
+        font-size: 18px;
         line-height: 1.6;
     }
 }
 
 a {
-    color: #28b3ff;
+    color: #84D1EB;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -54,7 +54,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #1a7aae;
+    color: #4A9EBB;
 }
 
 .light {
@@ -62,14 +62,16 @@ a:focus {
 }
 
 .navbar {
-    margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #696969;
+    background-color: #404040;
 }
 
 .navbar-brand {
+    margin-left:15px;
+    margin-top: -5px;
+    margin-bottom: -5px;
     font-weight: 700;
 }
 
@@ -95,9 +97,10 @@ a:focus {
 }
 
 .navbar-toggle {
-    padding: 4px 6px;
+    margin-top: -3px;
+    margin-right: 15px;
     font-size: 25px;
-    color: #fff;
+    color: #808080;
 }
 
 .navbar-toggle:focus,
@@ -107,7 +110,8 @@ a:focus {
 
 @media(min-width:767px) {
     .navbar {
-        padding: 20px 0;
+        width: 100%;
+        padding: 20px 0px;
         border-bottom: 0;
         letter-spacing: 1px;
         background: 0 0;
@@ -117,8 +121,8 @@ a:focus {
     }
 
     .top-nav-collapse {
-        padding: 0;
-        background-color: #696969;
+        padding: 0px;
+        background-color: #808080;
     }
 
     .navbar-custom.top-nav-collapse {
@@ -129,12 +133,12 @@ a:focus {
 .intro {
     display: table;
     width: 100%;
-    height: auto;
+    height: 80%;
     padding: 100px 0;
     text-align: center;
-    color: #FFF;
+    color: #808080;
     <!--background: url(../img/intro-bg.jpg) no-repeat bottom center scroll-->
-    background-color: #000;
+    background-color: #E6F6FD;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -144,6 +148,7 @@ a:focus {
 .intro-body {
     display: table-cell;
     vertical-align: middle;
+    margin-bottom: 100%;
 }
 
 .brand-heading {
@@ -170,17 +175,14 @@ a:focus {
 }
 
 .about {
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
     text-align: center;
-    color: #696969;
-    <!--background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;-->
+    color: #404040;
     background-color: #fff;
+    width: 100%;
+    height: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
+    background: cover;
     -o-background-size: cover;
 }
 
@@ -192,11 +194,13 @@ a:focus {
 @media(min-width:767px) {
     .intro {
         height: 100%;
-        padding: 0;
+        background: 100%;
+        padding: 50;
     }
 
     .brand-heading {
         font-size: 100px;
+        padding: 50px;
     }
 
     .intro-text {
@@ -210,10 +214,10 @@ a:focus {
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid #fff;
+    border: 2px solid #808080;
     border-radius: 35px;
     font-size: 40px;
-    color: #fff;
+    color: #808080;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -223,7 +227,7 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
-    color: #fff;
+    color: #84D1EB;
     background: rgba(255,255,255,.1);
 }
 
@@ -237,10 +241,10 @@ a:focus {
 .page-scroll .btn-circle:hover i.animated {
     -webkit-animation-name: pulse;
     -moz-animation-name: pulse;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
     -webkit-animation-timing-function: linear;
     -moz-animation-timing-function: linear;
 }
@@ -280,38 +284,40 @@ a:focus {
 }
 
 .content-section {
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     width:100%;
-    height: 100%;
+    height: auto;
+    background: cover;
 }
 
 .documents-section {
 	width: 100%;
-    height: 100%;
-    padding: 100px 10 100px;
+    height: 80%;
+    padding: 50px 10px 50px;
     color: #fff;
     <!--background: url(../img/downloads-bg.jpg) no-repeat center center scroll;-->
     background-color: #000;
-    -webkit-background-size: cover;
+    /*-webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
-    
+    -o-background-size: cover;*/
 }
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 150px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width:100%;
         height: 100%;
-        padding-bottom: 250px;
+        background: cover;
 
     }
 
     .documents-section {
         padding: 100px 0;
         height: 100%;
-        padding-bottom: 100px;
-
+        width:100%;
     }
 
 }
@@ -326,17 +332,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #28b3ff;
-    color: #28b3ff;
+    border: 1px solid #84D1EB;
+    color: #84D1EB;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #28b3ff;
+    border: 1px solid #84D1EB;
     outline: 0;
     color: #fff;
-    background-color: #28b3ff;
+    background-color: #84D1EB;
 }
 
 .btn-huge {
@@ -426,4 +432,12 @@ body {
 
 .banner ul li { 
     float: left; 
+}
+
+.contact {
+    height: auto;
+}
+
+.contact {
+    padding-bottom:0px;
 }
